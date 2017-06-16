@@ -29,7 +29,7 @@ if(isset($_POST['id'],$_POST['pass']) && strlen($_POST['id'])>0 )
   }
 }
 
-$name = ''; // ここ書き換え
+$name = $_SESSION['name']; // ここ書き換え
 print('<hr />');
 print($name . "さんでログイン中");
 
